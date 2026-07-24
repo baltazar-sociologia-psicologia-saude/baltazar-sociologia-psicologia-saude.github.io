@@ -123,7 +123,7 @@ window.onload = () => {
     }
 
     setTimeout(() => {
-        ['assets/img/baltazar-portrait.jpg', 'assets/img/capa-delirio-realidade.jpg'].forEach((src) => {
+        ['assets/img/profile_pic.jpeg', 'assets/img/capa-delirio-realidade.jpg'].forEach((src) => {
             const img = new Image();
             img.src = src;
         });
