@@ -4,57 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baltazar de Castro Fernandes</title>
-    <!-- Link your stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
     
-    <!-- Google Fonts for the Luxury Theme -->
+    <!-- Link the correct stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts for Editorial Theme -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Sticky Navigation -->
-    <nav class="nav">
-        <div class="nav-left">
-            <span class="nav-item">Baltazar de Castro Fernandes</span>
-        </div>
-        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="nav-menu nav-right">
-            <a href="#sobre" class="nav-item">Sobre</a>
-            <a href="#ficcao" class="nav-item">Ficção</a>
-            <a href="#investigacao" class="nav-item">Investigação</a>
-        </div>
-    </nav>
+    <a href="#main" class="skip-link">Saltar para o conteúdo</a>
 
-    <!-- Main Content Sections -->
-    <main>
-        <section id="sobre" class="section fade-in-section">
-            <h1 class="title has-text-gold">Sobre o Autor</h1>
-            <p>Baltazar de Castro Fernandes é um académico, investigador e escritor português...</p>
+    <!-- Header Navigation -->
+    <header class="nav-bar">
+        <div class="container nav-inner">
+            <span class="nav-brand">Baltazar de Castro Fernandes</span>
+            <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu nav-right">
+                <a href="#sobre" class="nav-item">Sobre</a>
+                <a href="#ficcao" class="nav-item">Ficção</a>
+                <a href="#investigacao" class="nav-item">Investigação</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero / About Section -->
+        <section id="sobre" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-text fade-in-section">
+                    <p class="hero-kicker">Académico, investigador e escritor</p>
+                    <h1 class="hero-title">Baltazar de Castro Fernandes</h1>
+                    <p class="hero-lede">Investigação nas Representações Sociais, uso de tecnologias de análise e narrativa sobre a condição humana.</p>
+                    <div class="hero-actions">
+                        <a href="#ficcao" class="btn btn-primary">Ver obra de ficção</a>
+                        <a href="#investigacao" class="btn btn-ghost">Publicações académicas</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in-section">
+                    <img src="assets/img/baltazar-portrait.jpg" alt="Baltazar de Castro Fernandes" class="hero-photo" loading="lazy">
+                </div>
+            </div>
         </section>
 
-        <section id="ficcao" class="section fade-in-section">
-            <h2 class="title has-text-gold">Entre o Delírio e a Realidade</h2>
-            <p>Um romance de Baltazar Fernandes · 15,00 €</p>
+        <!-- About Detail -->
+        <section class="section section-paper fade-in-section">
+            <div class="container narrow prose">
+                <h2>Sobre o autor</h2>
+                <p>Baltazar de Castro Fernandes é um académico, investigador e escritor português, Doutor em Ciências da Comunicação pela Universidade do Minho, com especialização em Comunicação Estratégica e Organizacional.</p>
+                <p>No campo académico, é uma referência no estudo das Representações Sociais, tendo publicado manuais técnicos que exploram o uso de ferramentas tecnológicas avançadas (como o software Iramuteq). Para além do seu contributo científico, dedica-se também à ficção, explorando temas profundos da condição humana.</p>
+            </div>
         </section>
 
-        <section id="investigacao" class="section fade-in-section">
-            <h2 class="title has-text-gold">Investigação e Publicações Académicas</h2>
-            <p>Metodologias de Análise em Representações Sociais...</p>
+        <!-- Fiction Section -->
+        <section id="ficcao" class="section section-accent fade-in-section">
+            <div class="container">
+                <div class="center-heading">
+                    <h2>Literatura</h2>
+                    <p class="section-intro">Um romance sobre resiliência, saúde mental e laços afetivos.</p>
+                </div>
+
+                <div class="book-card book-feature">
+                    <div class="book-card-cover">
+                        <img src="assets/img/capa-delirio-realidade.jpg" alt="Capa de Entre o Delírio e a Realidade" loading="lazy">
+                    </div>
+                    <div class="book-card-body">
+                        <h3 class="book-title">Entre o Delírio e a Realidade</h3>
+                        <p class="book-author-line">Um romance de Baltazar Fernandes · <span class="price-tag">15,00 €</span></p>
+                        <p>Neste romance, acompanhamos Elias, um génio tão brilhante quanto vulnerável, que enfrenta o peso da doença mental enquanto procura sentido entre o amor e a perda.</p>
+                        
+                        <ul class="bullet-highlights">
+                            <li>História marcada por amor, perda e superação</li>
+                            <li>Exploração sensível dos limites da mente humana</li>
+                            <li>Portugal e a Suíça, IST, vínculos e identidade</li>
+                        </ul>
+
+                        <div class="hero-actions">
+                            <a href="https://editorareticencias.pt" class="btn btn-primary" target="_blank" rel="noopener">Comprar na Editora Reticências</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="investigacao" class="section section-muted fade-in-section">
+            <div class="container">
+                <div class="center-heading">
+                    <h2>Investigação e publicações académicas</h2>
+                    <p class="section-intro">Manual técnico e tese de doutoramento no CECS — Universidade do Minho.</p>
+                </div>
+
+                <div class="dual-cards">
+                    <!-- Book 1 -->
+                    <article class="book-academic card-shadow">
+                        <div class="kicker-accent">Manual Técnico</div>
+                        <h3 class="book-title">Metodologias de Análise em Representações Sociais</h3>
+                        <p class="book-subtitle">Manual do Iramuteq incorporado · Chiado Books · 2019</p>
+                        <p class="meta-line">ISBN 978-989-52-5522-1 · ~210 páginas</p>
+                        <p class="prose-compact">Obra focada na consolidação de análises de informação textual recorrendo a ferramentas de análise de dados e ao software Iramuteq®.</p>
+                        <div class="price-row">Papel 13,00 € · Ebook 5,00 €</div>
+                    </article>
+
+                    <!-- Doctoral Thesis -->
+                    <article class="book-academic card-shadow">
+                        <div class="kicker-accent">Tese de Doutoramento</div>
+                        <h3 class="book-title">Uma Organização em Contextos de Mudança</h3>
+                        <p class="book-subtitle">Representações Sociais dos seus Colaboradores · UMinho (2014)</p>
+                        <p class="prose-compact">Estudo focado no processo de fusão da ULSAM em 2008, analisando representações sociais de colaboradores em cenários de mudança organizacional radical.</p>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <p>© <span id="current-year"></span> Baltazar de Castro Fernandes. Página hospedada em GitHub Pages.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Baltazar de Castro Fernandes · Universidade do Minho</p>
+            <p class="footer-muted">© <span id="current-year"></span>. Página hospedada em GitHub Pages.</p>
+        </div>
     </footer>
 
-    <!-- Link your JavaScript controller -->
+    <!-- Controller script -->
     <script src="controller.js"></script>
 </body>
 </html>
